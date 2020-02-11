@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+
 public class Die {
     int sides;
     int value;
@@ -18,14 +20,33 @@ public class Die {
             //cal fraction of each probability
             //store in an array of probabilities(indexes matching)
             ArrayList<Double> probabilitiesInFraction = new ArrayList<>();
+            ArrayList<Double> sortedProbs = new ArrayList<>();
             for (int a=0;a<probabilities.length;a++){
                 if(probabilitiesInFraction.contains(((double)probabilities[a])/sumOfProbability)){
                     probabilitiesInFraction.add(((double)probabilities[a])/sumOfProbability+probabilitiesInFraction.get(a-1));
+                    sortedProbs.add(((double)probabilities[a])/sumOfProbability+probabilitiesInFraction.get(a-1));
                 }else {
                     probabilitiesInFraction.add(((double)probabilities[a])/sumOfProbability);
+                    sortedProbs.add(((double)probabilities[a])/sumOfProbability);
                 }
-                System.out.println(Math.random()+0.1);
             }
+            ArrayList<Integer> values = new ArrayList<>();
+            for(int a=1;a<=sides;a++){
+                values.add(a);
+            }
+            double random = Math.random()+0.1;
+            for(double v:sortedProbs){
+                if(random<v){
+                    value =
+                }
+            }
+//            Collections.sort(sortedProbs);
+//            System.out.println(probabilitiesInFraction);
+//            System.out.println(sortedProbs);
+
+
+
+
 //            for(){
 //
 //            }
