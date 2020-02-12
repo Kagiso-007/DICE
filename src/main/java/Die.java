@@ -9,7 +9,6 @@ public class Die {
         this.probabilities=dieProbabilities;
     }
     public int roll(){
-
         if(!Arrays.toString(probabilities).equals("[]")&&sides==probabilities.length) {
             int sumOfProbability = 0;
             for (int number : probabilities) {
