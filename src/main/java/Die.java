@@ -39,6 +39,7 @@ public class Die {
                 if(random<v){
                     value =
                 }
+
             }
 //            Collections.sort(sortedProbs);
 //            System.out.println(probabilitiesInFraction);
