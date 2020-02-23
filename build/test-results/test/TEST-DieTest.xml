@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DieTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-02-23T13:36:33" hostname="DESKTOP-RRI56AB" time="0.012">
+  <properties/>
+  <testcase name="probabilitiesType()" classname="DieTest" time="0.008"/>
+  <testcase name="probabilitiesSum()" classname="DieTest" time="0.001"/>
+  <testcase name="dieSides()" classname="DieTest" time="0.001"/>
+  <testcase name="negativeProbabilities()" classname="DieTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
